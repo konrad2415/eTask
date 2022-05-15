@@ -209,13 +209,15 @@ footer a, footer a:link {
   color: #fff;
   text-decoration: none;
 }
+
+
 </style>
 
   <script>
   window.console = window.console || function(t) {};
 </script>
 
-  <script src="YXzLBN_data/prefixfree.js"></script>
+  <script src="js/prefixfree.js"></script>
 
   
   <script>
@@ -230,43 +232,29 @@ footer a, footer a:link {
 <body translate="no">
   <div class="wrapper">
   <form class="login">
-    <p class="title">Log in</p>
-    <input type="text" placeholder="Username" autofocus="">
+    <p class="title">
+      <a href="#" class="register ">Login /Register</a>
+    </p>
+    <input type="text" placeholder="Celular" autofocus="">
     <i class="fa fa-phone"></i>
-    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Password" id="pwd1">
     <i class="fa fa-key"></i>
-    <a href="#">Contact Administrator</a>
+
+    <input type="password" placeholder="Password"  class="details" style="display: none;">
+    <i class="fa fa-key"></i>
+   
     <button>
       <i class="spinner"></i>
       <span class="state">Log in</span>
     </button>
   </form>
+
+
   <footer><a target="blank" href="#">luky.store</a></footer>
   <p></p>
 </div>
 <script src="js/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e6459972.js"></script>
 
 <script src="js/jquery.js"></script>
-    <script id="rendered-js">
-var working = false;
-$('.login').on('submit', function (e) {
-e.preventDefault();
-if (working) return;
-working = true;
-var $this = $(this),
-$state = $this.find('button > .state');
-$this.addClass('loading');
-$state.html('Authenticating');
-setTimeout(function () {
-  $this.addClass('ok');
-  $state.html('Goo a head!');
-  setTimeout(function () {
-    $state.html('Log in');
-    $this.removeClass('ok loading');
-    working = false;
-  }, 4000);
-}, 3000);
-});
-  </script>
- 
+    <script id="rendered-js"  src="js/myApp.js"></script> 
 </body></html>
