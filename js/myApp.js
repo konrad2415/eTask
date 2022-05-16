@@ -26,8 +26,7 @@ setTimeout(function () {
 $(function (){
     
     $('.register').click(function() {
-             
-      
+        $('.details').toggle();      
     });
 
 })
