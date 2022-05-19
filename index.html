@@ -26,7 +26,7 @@
     <!--Screen-->
     <div class="min-h-screen flex flex-col">
         <!--Header Section Starts Here-->
-        <header class="bg-nav">
+        <header class="bg-nav sticky top-0 z-50">
             <div class="flex justify-between">
                 <div class="p-1 mx-3 inline-flex items-center">
                     <i class="fas fa-bars pr-2 text-white" onclick="sidebarToggle()"></i>
@@ -393,9 +393,9 @@
             <!--/Main-->
         </div>
         <!--Footer-->
-        <footer class="bg-grey-darkest text-white p-2">
-            <div class="flex flex-1 mx-auto">&copy; My Design</div>
-            <div class="flex flex-1 mx-auto">Distributed by:  <a href="https://themewagon.com/" target=" _blank">Themewagon</a></div>
+        <footer class="bg-grey-darkest text-white p-4">
+            <div class="flex flex-1 mx-auto">luki's Store &copy;</div>
+            <div class="flex flex-1 mx-auto" id="made">Made by:  konradzuse.dm@gmail.com &nbsp;<span id="stateData">i</span></div>
         </footer>
         <!--/footer-->
 
@@ -403,6 +403,21 @@
 
 </div>
 <script src="js/main.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log("Its working");
+        let m=$("#made").html();
+        console.log(m);
+       // using ocal storage to send data between pages
+       const gstat= function(e){
+         let dest=document.querySelector(".stateData");
+         let state= ;
+         localStorage.setItem('state',"A25iq200");
+
+       };
+    });
+</script>
 </body>
 
 </html>
