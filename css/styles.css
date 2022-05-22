@@ -478,7 +478,9 @@ hr {
 img {
   border-style: solid;
 }
-
+.logo-img {
+  max-width: 20px;
+}
 textarea {
   resize: vertical;
 }
