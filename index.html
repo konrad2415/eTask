@@ -17,12 +17,14 @@
      <!-- Css -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/tailwind-3.0.24.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
  </head>
 
+
 <body>
 <!--Container -->
-<div class="mx-auto bg-grey-400">
+<div class="mx-auto bg-gray-300est">
     <!--Screen-->
     <div class="min-h-screen flex flex-col">
         <!--Header Section Starts Here-->
@@ -31,40 +33,43 @@
                 <div class="p-1 mx-3 inline-flex items-center">
                     <i class="fas fa-bars pr-2 text-white" onclick="sidebarToggle()"></i>
                     <img src="img/shoppingBag.ico" alt="" class="logo-img"><h1 class="text-white p-2">luky's</h1>
+                    
                 </div>
+                
                 <div class="p-1 flex flex-row items-center">
-                    <a href="#" class="text-white p-2 mr-2 no-underline hidden md:block lg:block">Github</a>
-
-
                     <img onclick="profileToggle()" class="inline-block h-8 w-8 rounded-full" src="img/4323180.jpeg" alt="">
                     <a href="#" onclick="profileToggle()" class="text-white p-2 no-underline hidden md:block lg:block">Adam Wathan</a>
-                    <div id="ProfileDropDown" class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r">
+                    <div id="ProfileDropDown" class="rounded hidden shadow-md bg-white absolute top-0 mt-12 mr-1 right-0">
                         <ul class="list-reset">
-                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">My account</a></li>
-                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Notifications</a></li>
-                          <li><hr class="border-t mx-2 border-grey-ligght"></li>
-                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Logout</a></li>
+                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-gray-300">My account</a></li>
+                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-gray-300">Notifications</a></li>
+                          <li><hr class="border-t mx-2 border-gray-ligght"></li>
+                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-gray-300">Logout</a></li>
                         </ul>
                     </div>
                 </div>
+                
             </div>
-        </header>
+            
+            </header>
         <!--/Header-->
 
         <div class="flex flex-1">
             <!--Sidebar-->
             <aside id="sidebar" class="bg-side-nav w-1/2 md:w-1/6 lg:w-1/6 border-r border-side-nav hidden md:block lg:block" style="display:none">
+                <div class="flex">
 
+                </div>
                 <ul class="list-reset flex flex-col">
-                    <li class=" w-full h-full py-3 px-2 border-b border-light-border bg-white">
+                    <li class=" w-full h-full py-3 px-2 border-b border-300-border ">
                         <a href="index.html"
                            class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                            <i class="fas fa-tachometer-alt float-left mx-2"></i>
+                            <span class="fas fa-tachometer-alt float-left mx-2"></span>
                             Dashboard
-                            <span><i class="fas fa-angle-right float-right"></i></span>
+                            <span class="fas fa-angle-right float-right"></span>
                         </a>
                     </li>
-                    <li class="w-full h-full py-3 px-2 border-b border-light-border">
+                    <li class="w-full h-full py-3 px-2 border-b border-300-border">
                         <a href="forms.html"
                            class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                             <i class="fab fa-wpforms float-left mx-2"></i>
@@ -72,7 +77,7 @@
                             <span><i class="fa fa-angle-right float-right"></i></span>
                         </a>
                     </li>
-                    <li class="w-full h-full py-3 px-2 border-b border-light-border">
+                    <li class="w-full h-full py-3 px-2 border-b border-300-border">
                         <a href="buttons.html"
                            class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                             <i class="fas fa-grip-horizontal float-left mx-2"></i>
@@ -82,13 +87,13 @@
                     </li>
                     <li class="w-full h-full py-3 px-2 border-b border-light-border">
                         <a href="tables.html"
-                           class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                            class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                             <i class="fas fa-table float-left mx-2"></i>
                             Tables
                             <span><i class="fa fa-angle-right float-right"></i></span>
                         </a>
                     </li>
-                    <li class="w-full h-full py-3 px-2 border-b border-light-border">
+                    <li class="w-full h-full py-3 px-2 border-b border-300-border bg-white">
                         <a href="ui.html"
                            class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                             <i class="fab fa-uikit float-left mx-2"></i>
@@ -111,21 +116,21 @@
                             <span><i class="fa fa-angle-down float-right"></i></span>
                         </a>
                         <ul class="list-reset -mx-2 bg-white-medium-dark">
-                            <li class="border-t mt-2 border-light-border w-full h-full px-2 py-3">
+                            <li class="border-t mt-2 border-300-border w-full h-full px-2 py-3">
                                 <a href="login.html"
                                    class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                                     Login Page
                                     <span><i class="fa fa-angle-right float-right"></i></span>
                                 </a>
                             </li>
-                            <li class="border-t border-light-border w-full h-full px-2 py-3">
+                            <li class="border-t border-300-border w-full h-full px-2 py-3">
                                 <a href="register.html"
                                    class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                                     Register Page
                                     <span><i class="fa fa-angle-right float-right"></i></span>
                                 </a>
                             </li>
-                            <li class="border-t border-light-border w-full h-full px-2 py-3">
+                            <li class="border-t border-300-border w-full h-full px-2 py-3">
                                 <a href="404.html"
                                    class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                                     404 Page
@@ -139,285 +144,195 @@
             </aside>
             <!--/Sidebar-->
             <!--Main-->
-            <main class="bg-white-300 flex-1 p-3 overflow-hidden">
-
-                <div class="flex flex-col">
-                    <!-- Stats Row Starts Here -->
-                    <div class="flex flex-1 flex-col md:flex-row lg:flex-row mx-2">
-                        <div class="shadow-lg bg-red-vibrant border-l-8 hover:bg-red-vibrant-dark border-red-vibrant-dark mb-2 p-2 md:w-1/4 mx-2">
-                            <div class="p-4 flex flex-col">
-                                <a href="#" class="no-underline text-white text-2xl">
-                                    $244
-                                </a>
-                                <a href="#" class="no-underline text-white text-lg">
-                                    Total Sales
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="shadow bg-info border-l-8 hover:bg-info-dark border-info-dark mb-2 p-2 md:w-1/4 mx-2">
-                            <div class="p-4 flex flex-col">
-                                <a href="#" class="no-underline text-white text-2xl">
-                                    $199.4
-                                </a>
-                                <a href="#" class="no-underline text-white text-lg">
-                                    Total Cost
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="shadow bg-warning border-l-8 hover:bg-warning-dark border-warning-dark mb-2 p-2 md:w-1/4 mx-2">
-                            <div class="p-4 flex flex-col">
-                                <a href="#" class="no-underline text-white text-2xl">
-                                    900
-                                </a>
-                                <a href="#" class="no-underline text-white text-lg">
-                                    Total Users
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="shadow bg-success border-l-8 hover:bg-success-dark border-success-dark mb-2 p-2 md:w-1/4 mx-2">
-                            <div class="p-4 flex flex-col">
-                                <a href="#" class="no-underline text-white text-2xl">
-                                    500
-                                </a>
-                                <a href="#" class="no-underline text-white text-lg">
-                                    Total Products
-                                </a>
-                            </div>
-                        </div>
+            <div class="  py-10  grid gap-10 lg:grid-cols-5 xl:grid-cols-4 sm:grid-cols-2">
+                
+                
+                <!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <button class="relative text-white p-6 rounded text-2xl font-bold overflow-hidden">
+                    Example button
+                    <img src="img/miband6.png" style="width: 300px;height: 150px;" alt="">
+                    <div class="ribbon bg-red-500 text-sm whitespace-no-wrap px-4">50%</div>
+                </button>
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Apple MacBook Pro M1 13.3"  16GB/512GB (MYDC2FN/A-16GB)</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
                     </div>
-
-                    <!-- /Stats Row Ends Here -->
-
-                    <!-- Card Sextion Starts Here -->
-                    <div class="flex flex-1 flex-col md:flex-row lg:flex-row mx-2">
-
-                        <!-- card -->
-
-                        <div class="rounded overflow-hidden shadow bg-white mx-2 w-full">
-                            <div class="px-6 py-2 border-b border-light-grey">
-                                <div class="font-bold text-xl">Trending Categories</div>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table text-grey-darkest">
-                                    <thead class="bg-grey-dark text-white text-normal">
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Item</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Current</th>
-                                        <th scope="col">Change</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>
-                                            <button class="bg-blue-500 hover:bg-blue-800 text-white font-light py-1 px-2 rounded-full">
-                                                Twitter
-                                            </button>
-                                        </td>
-                                        <td>4500</td>
-                                        <td>4600</td>
-                                        <td>
-                                            <span class="text-green-500"><i class="fas fa-arrow-up"></i>5%</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>
-                                            <button class="bg-primary hover:bg-primary-dark text-white font-light py-1 px-2 rounded-full">
-                                                Facebook
-                                            </button>
-                                        </td>
-                                        <td>10000</td>
-                                        <td>3000</td>
-                                        <td>
-                                            <span class="text-red-500"><i class="fas fa-arrow-down"></i>65%</span>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>
-                                            <button class="bg-success hover:bg-success-dark text-white font-light py-1 px-2 rounded-full">
-                                                Amazon
-                                            </button>
-                                        </td>
-                                        <td>10000</td>
-                                        <td>3000</td>
-                                        <td>
-                                            <span class="text-red-500"><i class="fas fa-arrow-down"></i>65%</span>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>
-                                            <button class="bg-blue-500 hover:bg-blue-800 text-white font-light py-1 px-2 rounded-full">
-                                                Microsoft
-                                            </button>
-                                        </td>
-                                        <td>10000</td>
-                                        <td>3000</td>
-                                        <td>
-                                            <span class="text-green-500"><i class="fas fa-arrow-up"></i>65%</span>
-                                        </td>
-                                    </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- /card -->
-
+                  </div>
+                  <!--item card-->
+                <!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <div>
+                      <img src="img/schoolbag2.png" style="width: 150px;height: 250px;"class="min-w-5" alt="">
                     </div>
-                    <!-- /Cards Section Ends Here -->
-
-                    <!-- Progress Bar -->
-                    <div class="flex flex-1 flex-col md:flex-row lg:flex-row mx-2 mt-2">
-                        <div class="rounded overflow-hidden shadow bg-white mx-2 w-full pt-2">
-                            <div class="px-6 py-2 border-b border-light-grey">
-                                <div class="font-bold text-xl">Progress Among Projects</div>
-                            </div>
-                            <div class="">
-                                <div class="w-full">
-
-                                    <div class="shadow w-full bg-grey-light">
-                                        <div class="bg-blue-500 text-xs leading-none py-1 text-center text-white"
-                                             style="width: 45%">45%
-                                        </div>
-                                    </div>
-
-
-                                    <div class="shadow w-full bg-grey-light mt-2">
-                                        <div class="bg-teal-500 text-xs leading-none py-1 text-center text-white"
-                                             style="width: 55%">55%
-                                        </div>
-                                    </div>
-
-
-                                    <div class="shadow w-full bg-grey-light mt-2">
-                                        <div class="bg-orange-500 text-xs leading-none py-1 text-center text-white"
-                                             style="width: 65%">65%
-                                        </div>
-                                    </div>
-
-
-                                    <div class="shadow w-full bg-grey-300 mt-2">
-                                        <div class="bg-red-800 text-xs leading-none py-1 text-center text-white"
-                                             style="width: 75%">75%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Xiaomi Miband 6</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
                     </div>
-                    <!--Profile Tabs-->
-                    <div class="flex flex-1 flex-col md:flex-row lg:flex-row mx-2 p-1 mt-2 mx-auto lg:mx-2 md:mx-2 justify-between">
-                        <!--Top user 1-->
-                        <div class="rounded rounded-t-lg overflow-hidden shadow max-w-xs my-3">
-                            <img src="img/w1Bdydo.jpg" alt="" class="w-full"/>
-                            <div class="flex justify-center -mt-8">
-                                <img src="img/8Km9tLL.jpg" alt=""
-                                     class="rounded-full border-solid border-white border-2 -mt-3">
-                            </div>
-                            <div class="text-center px-3 pb-6 pt-2">
-                                <h3 class="text-black text-sm bold font-sans">Olivia Dunham</h3>
-                                <p class="mt-2 font-sans font-light text-grey-700">Hello, i'm from another the other
-                                    side!</p>
-                            </div>
-                            <div class="flex justify-center pb-3 text-grey-dark">
-                                <div class="text-center mr-3 border-r pr-3">
-                                    <h2>34</h2>
-                                    <span>Photos</span>
-                                </div>
-                                <div class="text-center">
-                                    <h2>42</h2>
-                                    <span>Friends</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Top user 2-->
-                        <div class="rounded rounded-t-lg overflow-hidden shadow max-w-xs my-3">
-                            <img src="img/w1Bdydo.jpg" alt="" class="w-full"/>
-                            <div class="flex justify-center -mt-8">
-                                <img src="img/8Km9tLL.jpg" alt=""
-                                     class="rounded-full border-solid border-white border-2 -mt-3">
-                            </div>
-                            <div class="text-center px-3 pb-6 pt-2">
-                                <h3 class="text-black text-sm bold font-sans">Olivia Dunham</h3>
-                                <p class="mt-2 font-sans font-light text-grey-dark">Hello, i'm from another the other
-                                    side!</p>
-                            </div>
-                            <div class="flex justify-center pb-3 text-grey-dark">
-                                <div class="text-center mr-3 border-r pr-3">
-                                    <h2>34</h2>
-                                    <span>Photos</span>
-                                </div>
-                                <div class="text-center">
-                                    <h2>42</h2>
-                                    <span>Friends</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Top user 3-->
-                        <div class="rounded rounded-t-lg overflow-hidden shadow max-w-xs my-3">
-                            <img src="img/w1Bdydo.jpg" alt="" class="w-full"/>
-                            <div class="flex justify-center -mt-8">
-                                <img src="img/8Km9tLL.jpg" alt=""
-                                     class="rounded-full border-solid border-white border-2 -mt-3">
-                            </div>
-                            <div class="text-center px-3 pb-6 pt-2">
-                                <h3 class="text-black text-sm bold font-sans">Olivia Dunham</h3>
-                                <p class="mt-2 font-sans font-light text-grey-dark">Hello, i'm from another the other
-                                    side!</p>
-                            </div>
-                            <div class="flex justify-center pb-3 text-grey-dark">
-                                <div class="text-center mr-3 border-r pr-3">
-                                    <h2>34</h2>
-                                    <span>Photos</span>
-                                </div>
-                                <div class="text-center">
-                                    <h2>42</h2>
-                                    <span>Friends</span>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <!--item card--><!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <div>
+                      <img src="img/ar-galaxy-watch4-classic-399292-sm-r890nzkaaro-thumb-481214315.webp" style="width: 150px;height: 220px;" alt="">
                     </div>
-                    <!--/Profile Tabs-->
-                </div>
-            </main>
-            <!--/Main-->
-        </div>
-        <!--Footer-->
-        <footer class="bg-grey-darkest text-white p-4">
-            <div class="flex flex-1 mx-auto">luki's Store &copy;</div>
-            <div class="flex flex-1 mx-auto" id="made">Made by:  konradzuse.dm@gmail.com &nbsp;<span id="stateData">i</span></div>
-        </footer>
-        <!--/footer-->
-
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Apple MacBook Pro M1 13.3" Silver 16GB/512GB (MYDC2FN/A-16GB)</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
+                    </div>
+                  </div>
+                  <!--item card--><!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <div>
+                      <img src="img/schoolbag2.png" alt="">
+                    </div>
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Apple MacBook Pro M1 13.3" Silver 16GB/512GB (MYDC2FN/A-16GB)</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
+                    </div>
+                  </div>
+                  <!--item card--><!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <div>
+                      <img src="img/A10.jpg" style="width: 300px;height: 150px;"alt="">
+                    </div>
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Apple MacBook Pro M1 13.3" Silver 16GB/512GB (MYDC2FN/A-16GB)</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
+                    </div>
+                  </div>
+                  <!--item card--><!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <div>
+                      <img src="img/HP-Laptop-PNG-Image.png" style="width: 300px;height: 150px;" alt="">
+                    </div>
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Apple MacBook Pro M1 13.3" Silver 16GB/512GB (MYDC2FN/A-16GB)</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
+                    </div>
+                  </div>
+                  <!--item card--><!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <div>
+                      <img src="img/HP-Laptop-PNG-HD.png" style="width: 300px;height: 150px;" alt="">
+                    </div>
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Apple MacBook Pro M1 13.3" Silver 16GB/512GB (MYDC2FN/A-16GB)</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
+                    </div>
+                  </div>
+                  <!--item card--><!--Item card -->
+                <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+                    <div>
+                      <img src="img/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-1701528354957yvr1j.png" style="width: 300px;height: 150px;" alt="">
+                      
+                    </div>
+                    <div class="py-4 px-4 bg-white">
+                      <h3 class="text-md font-semibold text-gray-600">Apple MacBook Pro M1 13.3" Silver 16GB/512GB (MYDC2FN/A-16GB)</h3>
+                      <p class="mt-4 text-lg font-thin">$ 2400</p>
+                      <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <button class="font-semibold text-gray-800">Add to Basket</button>
+                      </span>
+                    </div>
+                  </div>
+                  <!--item card-->    
+       </div>
+ 
     </div>
 
+</div>  
+<!--Screen -->
+<div class="flex items-center justify-center bg-gray-100">
+    <div class="flex flex-col items-center mb-8 px-4 mx-auto mt-8">
+        <div class="font-sans flex justify-end space-x-1 select-none">
+            <a href="#" class="flex items-center px-4 py-2 text-gray-500 bg-gray-300 rounded-md hover:bg-blue-800 hover:text-white">
+                Previous
+            </a>&nbsp;
+            <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-800 hover:text-white" style="transition: all 0.2s ease;">
+                1
+            </a>&nbsp;
+            <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-800 hover:text-white" style="transition: all 0.2s ease;">
+                2
+            </a>&nbsp;
+            <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-800 hover:text-white" style="transition: all 0.2s ease;">
+                3
+            </a>&nbsp;
+            <span class="px-4 py-2 text-gray-700  rounded-md">
+                ...
+            </span>&nbsp;
+            <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-800 hover:text-white" style="transition: all 0.2s ease;">
+                10
+            </a>&nbsp;
+            <a href="#" class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-blue-800 hover:text-white" style="transition: all 0.2s ease;">
+                Next
+            </a>&nbsp;
+        </div>
+    </div>
 </div>
+<!--Footer-->
+<footer class="bg-gray-700 text-white p-2">
+    <div class="flex flex-1 mx-auto">&copy; My Design</div>
+</footer>
+<!--/footer-->
 <script src="js/main.js"></script>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script>
-    $(document).ready(function () {
-        console.log("Its working");
-        let m=$("#made").html();
-        console.log(m);
-       // using ocal storage to send data between pages
-       const gstat= function(e){
-         let dest=document.querySelector(".stateData");
-         let state= ;
-         localStorage.setItem('state',"A25iq200");
 
-       };
-    });
-</script>
 </body>
-
+<style>
+    .ribbon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 22px;
+      margin-right: -50px;
+      margin-top: 15px;
+      -ms-transform: rotate(45deg); /* IE 9 */
+      -webkit-transform: rotate(45deg); /* Safari prior 9.0 */
+      transform: rotate(45deg); /* Standard syntax */
+    }
+  </style>
 </html>
